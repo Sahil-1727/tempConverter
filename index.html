@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperatureConverter</title>
+    <script src="temp.js"></script>
+    <link rel="stylesheet" href="styesheet.css">
+</head>
+<body style="background-color: white;">
+<div class="div1">
+    <div>
+        <h2 style="font-weight: bold;"> temperature Converter </h2>
+        <label> <b style="color: white;">1] Fahrenheit </b></label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+        oninput="temperatureConverter(this.value)"
+        onchange="temperatureConverter(this.value)">
+    </div>
+<div id="space" >
+        Celsius:
+         <span id="outputCelsius"></span><br>
+        Kelvin :
+         <span id="outputkelvin"></span>
+</div>
+  <!--  celsius to fahrenheit -->
+  <div>
+    <label style="color: white;"><b > 2] Celsius </b></label>
+    <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter1(this.value)" 
+    onchange="temperatureConverter1(this.value)">
+  </div>
+<div id="space">
+    Fahrenheit: 
+    <span id="outputFahrenheit"></span><br>
+    kelvin: 
+    <span id="outputkelvin1"></span>
+</div>
+
+  <!-- kel to fahrenheit -->
+  
+  <div>
+    <label style="color: white;" ><b> 3] Kelvin  </b></label>
+    <input id="inputkelvin" type="number" placeholder="kelvin" oninput="temperatureConverter2(this.value)" 
+    onchange="temperatureConverter2(this.value)">
+  </div>
+<div id="space">
+    Fahrenheit:
+        <span id="outputFahrenheit1"></span><br>
+    celsius: 
+        <span id="outputCelsius1"></span>
+</div>
+  
+      
+</body>
+</html>
